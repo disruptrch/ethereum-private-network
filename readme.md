@@ -109,12 +109,11 @@ then node1
 
 ```
 docker run -it -p 8545:8545 -p 30303:30303  \
-       -v node1:/root/.ethereum ethereum/client-go:alltools-latest
+       -v node1:/root/.ethereum ethereum/client-go:alltools-latest 
 
 geth --rpc --rpccorsdomain="chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn" \
-  -rpcport 8545 --rpcapi="db,eth,net,web3,personal,web3"  \
-  --bootnodes=enode://4364896013735c849360d4a183c6e223c674c371c58433fe2f45da43e07e4fc506941fe24e81daf36e5ad0a848cb73879a0d240b4f94d910e86746b00ad92d69@127.0.0.1:0?discport=30301 
-  --allow-insecure-unlock 
+  --rpcaddr "0.0.0.0" --rpcport 8545 --rpcapi="db,eth,net,web3,personal,web3"  \
+  --bootnodes=enode://4364896013735c849360d4a183c6e223c674c371c58433fe2f45da43e07e4fc506941fe24e81daf36e5ad0a848cb73879a0d240b4f94d910e86746b00ad92d69@127.0.0.1:0?discport=30301 --mine --miner.threads=1 --etherbase=0x252A02E3661b41De2A0cA1E6c870B1587E03a937 
 ```
 NOTE: --rpccorsdomain as explained at https://metamask.zendesk.com/hc/en-us/articles/360015290012-Using-a-Local-Node for metamask
 
