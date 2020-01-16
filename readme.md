@@ -32,6 +32,7 @@ Path of the secret key file: /root/.ethereum/keystore/UTC--2020-01-15T16-34-14.4
 Edit file `node1/genesis.json` to `node2/genesis.json`
 
 * adapt in "alloc" the accounts from before (in first node genesis.json is enough)
+* set the balance in wei, use https://eth-converter.com/ for example. e.g 100000000000000000000 is 100 ETH
 * changing the nonce to some random value so you prevent unknown remote nodes from being able to connect to you.
 * chainId is an arbitrary integer value, e.g. 999
 
