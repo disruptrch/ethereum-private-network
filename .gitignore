@@ -2,5 +2,6 @@ node1/geth/*
 node1/keystore/*
 node2/geth/*
 node2/keystore/*
+explorer
 
 .idea/*
