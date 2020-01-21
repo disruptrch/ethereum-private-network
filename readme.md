@@ -1,5 +1,19 @@
 # Operating a private Ethereum network
 
+## Introduction
+An Ethereum network is a private network if the nodes are not connected to the main network nodes. In this context private only means reserved or isolated, rather than protected or secure. Transactions are private to the nodes within the membership of the consortium.
+
+Ethereum (as it is now) is designed as a public blockchain. It's designed to operate in a trust-less environment and is secured through the difficulty of mining blocks and the economic reward associated with mining. But You can still deploy a private Ethereum blockchain for testing and experimentation.
+
+Moreover **even if private** is in the name, once membership is granted, a node will gain access to the confidential information, not just between two users, but between everyone in the consortium.
+
+[Ethereum Enterprise Alliance](https://entethalliance.org) is working on pluggable consensus that will be better suited for private Blockchains.
+
+You can use this tutorial to run multiple nodes and miner.
+
+An Ethereum node is a device/program that communicates with the Ethereum network. Nodes are also known as clients. Software that can act as an Ethereum node include Parity and Go-ethereum ( geth ).
+
+
 ## Setup
 You can also use this tutorial for
 * 1 Ethereum node: node1, node1 being also a miner
